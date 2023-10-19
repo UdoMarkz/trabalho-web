@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <title>Contate Udo Marques</title>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <li class="navbar-item">
+        <a href="./index.html">Sobre</a>
+      </li>
+      <li class="navbar-item">
+        <a href="./formaçao.html">Formação</a>
+      </li>
+      </li>
+      <li class="navbar-item">
+        <a href="./contato.html">Contato</a>
+      </li>
+      <li class="navbar-item">
+        <a href="./portfolio.html">Portfolio</a>
+      </li>
+    </nav>
+
+    <section class="contato" id="contato">
+      <form>
+        <div class="input-grupo">
+          <label for="nome">Nome completo</label>
+          <input type="text" name="nome" required>
+        </div>
+        <div class="input-grupo">
+          <label for="email">Email para contato</label>
+          <input type="email" name="email" required>
+        </div>
+        <div class="input-grupo">
+          <label for="mensagem">Deixe uma mensagem</label>
+          <textarea rows="5" cols="35" name="mensagem"></textarea>
+        </div>
+
+        <div class="input-grupo">
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
+		</section>
+
+    <script>
+      const formulário = document.querySelector('form');
+
+      formulário.addEventListener('submit', evento => {
+        // Parar o comportamento defautl do formulário, já que não temos um backend para enviar esses dados e para não causar um recarregamento desnecessário
+        evento.preventDefault();
+
+        // informar o usuário de que o envio foi feito
+        alert('Contato feito! Responderei em breve!');
+      });
+
+    </script>
+</html>

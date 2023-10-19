@@ -1,0 +1,176 @@
+/* GLOBAL STYLES */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: 0;
+	overflow-x: hidden;
+}
+
+:root {
+	--primary-color: #474787;
+	--secondary-color: rgb(92, 91, 91);
+}
+
+body {
+	background-color: #aaabb8;
+}
+
+ul,
+li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* NAVBAR */
+.navbar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	background: var(--primary-color);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.navbar-item {
+	margin: 0 2rem;
+}
+
+.navbar-item a {
+	color: #ececec;
+	font-size: 18px;
+	transition: color 0.2s;
+	line-height: 48px;
+}
+
+.navbar-item a:hover {
+	color: var(--secondary-color);
+}
+
+/* SECTION sobre */
+.sobre {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+}
+
+.sobre-container {
+	width: 75%;
+}
+
+.sobre-container h1 {
+	margin: 1.6rem 0;
+	font-size: 3rem;
+	color: #2c2c54;
+}
+
+.sobre-container p {
+	font-weight: 400;
+	font-size: 1.8rem;
+	line-height: 3rem;
+	margin-bottom: 10px;
+}
+
+/* SECTION formaçao */
+.formaçao {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+}
+
+.formaçao-intro {
+	text-align: center;
+	width: 90%;
+	max-width: 600px;
+}
+
+.formaçao-intro h2 {
+	margin: 1.6rem 0;
+	font-size: 2.6rem;
+	color: #2c2c54;
+}
+
+.formaçao-intro p {
+	margin: 1.6rem 0;
+	font-size: 1.8rem;
+}
+
+/* SECTION CONTACT */
+.contact {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+}
+
+form {
+	display: flex;
+	margin-top: 100px;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.input-grupo {
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
+	width: 500px;
+}
+
+.input-grupo label {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.input-grupo input {
+	width: 100%;
+	padding: 10px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	border: 1px solid var(--secondary-color);
+}
+
+.input-grupo textarea {
+	width: 100%;
+	min-height: 100px;
+	padding: 10px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	border: 1px solid var(--secondary-color);
+}
+
+.input-grupo button {
+	margin-top: 2rem;
+	background: var(--primary-color);
+	border: 0;
+	border-radius: 10px;
+	width: 20rem;
+	padding: 1rem;
+	color: #ececec;
+	display: block;
+	text-align: center;
+	transition: all 0.2s;
+	cursor: pointer;
+}
+
+.portfolio-btn {
+	color: rgb(21, 6, 243);
+}
